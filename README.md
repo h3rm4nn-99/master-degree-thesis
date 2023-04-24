@@ -16,9 +16,9 @@ This protocol is very lightweight but it's also pretty insecure since it doesn't
 The goal of my work is to use the same blueprint of the aforementioned work to integrate Post Quantum Cryptography algorithms in the MAVLink protocol.
 
 ## Progress
-[] Recreate the environment of the previous work;
-[] Introduce new algorithms;
-[] Test the results
+- [ ] Recreate the environment of the previous work;
+- [ ] Introduce new algorithms;
+- [ ] Test the results
 
 ## How to build?
 ### Ardupilot

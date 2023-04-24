@@ -1,0 +1,6 @@
+[submodule "ardupilot-thesis"]
+	path = ardupilot-thesis
+	url = https://github.com/h3rm4nn-99/ardupilot-thesis
+[submodule "qgroundcontrol-thesis"]
+	path = qgroundcontrol-thesis
+	url = https://github.com/h3rm4nn-99/qgroundcontrol-thesis

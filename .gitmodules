@@ -1,0 +1,6 @@
+[submodule "ardupilot"]
+	path = ardupilot
+	url = https://github.com/h3rm4nn-99/ardupilot
+[submodule "qgroundcontrol"]
+	path = qgroundcontrol
+	url = https://github.com/h3rm4nn-99/qgroundcontrol

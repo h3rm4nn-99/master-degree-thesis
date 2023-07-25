@@ -16,12 +16,17 @@ This protocol is very lightweight but it's also pretty insecure since it doesn't
 The goal of my work is to use the same blueprint of the aforementioned work to integrate Post Quantum Cryptography algorithms in the MAVLink protocol.
 
 ## Progress
-- [ ] Recreate the environment of the previous work;
+- [x] Recreate the environment of the previous work (kinda);
 - [ ] Introduce new algorithms;
 - [ ] Test the results
 
 ## How to build?
-This section assumes that you're using **Ubuntu Linux 22.04 LTS** (the latest LTS version at the time of writing), that you've already cloned this repository and you have already installed the `build-essential` package that includes the C compiler.
+This section assumes that you're using **Ubuntu Linux 22.04 LTS** (the latest LTS version at the time of writing), that you've already cloned this repository and you have already installed the `build-essential` package that includes the C compiler. Initialize the submodules with
+
+```
+git submodule init
+```
+
 ### Ardupilot
 Before adding the aforementioned algorithms, you'll have to build the ArduPilot application in order for the necessary files to be generated. According to the [official documentation](https://ardupilot.org/dev/docs/building-the-code.html), you don't need to install any other packages manually. The project provides a script that automates the process when using Debian Based distributions (Ubuntu is one of them). The script is located at
 
@@ -34,7 +39,8 @@ ardupilot-thesis/Tools/environment_install/install-prereqs-ubuntu.sh -y
 
 Since in this work we'll be using the SITL emulator, you'll need to configure the `waf` tool to use the `sitl` board as shown below:
 
-4. Run the command `ardupilot-thesis/waf configure --board sitl`
+3. Enter the ArduPilot directory and initialize (again) the submodules with the previous command;
+4. Run the command `ardupilot-thesis/waf configure --board sitl`;
 5. Run the command `ardupilot-thesis/waf copter` to use the generic **copter** vehicle type.
 
 ### QGroundControl
